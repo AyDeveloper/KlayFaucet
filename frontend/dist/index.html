@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>KlayFaucet</title>
+    <link rel="stylesheet" href="./assets/app.css">
+</head>
+<body>
+         <!-- header for logo and avatar -->
+    <header class="mainHeader">
+        <!-- headerCenter -->
+        <div class="headerCenter">
+            <!-- logo -->
+            <div class="logo">
+                <h3>KlayFaucet</h3>
+            </div>
+
+            <div class="connect">
+                <button>Connect Wallet</button>
+                <div class="balDisp"></div>
+            </div>
+            <!-- avatar -->
+            <!-- end of avatar -->
+        </div>
+    </header>   
+    <!-- end of header -->
+
+    <!-- Main -->
+    <main class="mainContainer">
+        <p>KLAY Faucet sends a small amount of KLAY to the designated address for testing. It is important to note that you can run KLAY Faucet only once every 24 hours. In case the faucet balance is low, you can check back later.</p>
+        <div class="mainContainerCenter">
+            <div class="cardDet card" data-tilt>
+                <div class="desc">
+                    <h3>Get Test KLAY</h3>
+                    <p>This faucet transfers KLAY on Baobab: Klaytn testnet. <br> Confirm details before submitting.</p>
+                </div>
+    
+                <form class="submitForm">
+                    <label for="Wallet">
+                        <input type="text" name="addr" placeholder="0x00000000000000000000" class="addr" required>
+                    </label>
+    
+                    <input type="submit" value="Request Klay" class="submitBtn">
+                </form>
+            </div>
+
+            <div class="cardOutput card" data-tilt> 
+                <h3>Transaction History</h3>
+
+                <div class="notification">
+                    
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- end of main -->
+
+    <!-- footer -->
+    <footer class="mainFooter">
+        <!-- footer center -->
+        <!-- end of footer center -->
+    </footer>
+    <!-- end of footer -->
+
+    <section class="modal hideModal">
+        <div class="modalCenter">
+                <p>You you have ${20} KLAY which is supposed to be sufficient to pay for gas while making transactions</p>
+                <button class="closeBtn">Okay</button>
+        </div>
+    </section>
+   
+    <script src="./tilt.js"></script>
+    <!-- script -->
+    <script src="bundle.js"></script>
+   <!-- end of script -->
+</body>
+</html>

@@ -1,0 +1,294 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.mainHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    padding: 15px 0px;
+}
+
+
+.headerCenter {
+    width: 95%;
+    margin: .1px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.headerCenter .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerCenter .logo h3 {
+    position: relative;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.headerCenter .logo h3::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    background: url(./images/klaytnLogo.jpeg);
+    background-size: contain;
+    border-radius: 50%;
+}
+
+
+.connect {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.connect button {
+    display: inline-block;
+    position: relative;
+    padding: 10px 12px;
+    background: linear-gradient(to right, #CD0D25, #FE6003 );
+    border-radius: 5px;
+    border-radius: 40px;
+    color: white;
+    border: transparent;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.connect button:hover{
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.connect .balDisp {
+    display: none;
+    font-size: 18px;
+}
+
+.connect .balDisp span {
+    font-style: italic;
+    font-size: 15px;
+}
+
+.connect .tokenBal {
+    display: none;
+    font-size: 18px;
+}
+
+.connect .tokenBal span {
+    font-style: oblique;
+    font-size: 15px;
+}
+
+
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    background-image: url(./images/back.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainContainer p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.722);
+    width: 80%;
+    margin: .1px auto;
+    margin-bottom: 3rem;
+}
+
+.mainContainerCenter {
+    width: 95%;
+    margin: .1px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card{
+    width: 80%;
+    height: 350px;
+    max-width: 600px;
+    color: #fff;
+    padding: 50px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.desc {
+    margin-bottom: 20px;
+}
+
+.desc h3 {
+    font-size: 1.3rem;
+    font-style: oblique;
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+
+.desc p {
+    line-height: 25px;
+    padding-bottom: 20px;
+    width: unset !important;
+    margin: unset !important;
+    text-align: unset !important;
+}
+
+.submitForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.addr {
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.addr::placeholder {
+    padding-left: 5px;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 15px;
+}
+
+.submitBtn {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    background: #fff;
+    color: #ff01cf;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    cursor: pointer;
+}
+
+
+.notification {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.notification p {
+    margin-top: 0.7rem !important;
+    padding: 5px 8px ;
+    font-size: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 18px ;
+    width: unset;
+    margin: unset;
+}
+
+.successMessage {
+    color: white !important;
+    
+}
+
+.errorMessage {
+    color: #cd0d23b8 !important;
+    background-color: rgba(255, 255, 255, 0.69);
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.84);
+    z-index: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all linear;
+}
+
+.showModal {
+    display: flex;
+    z-index: 999;
+}
+
+.modalCenter {
+    width: 80%;
+    max-width: 500px;
+    background: linear-gradient(to right, #CD0D25, #FE6003 );
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modalCenter p {
+    text-align: center;
+    color: white;
+    width: 50%;
+    margin: .1px auto;
+    line-height: 28px;
+}
+
+.modalCenter .closeBtn {
+    padding: 8px 15px;
+    width: 50%;
+    margin: .1px auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
