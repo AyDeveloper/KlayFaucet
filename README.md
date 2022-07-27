@@ -7,5 +7,5 @@ This implements some methods in the caver-js library which were in turn used for
 
 ![finalDemo](https://user-images.githubusercontent.com/72970379/176818365-24bfe292-29ac-411b-afbf-b299fac7cbcb.gif)
 
-The Site is live on https://klayfaucet.netlify.app/
+The Site is live [here](https://klayfaucet.netlify.app/)
 
